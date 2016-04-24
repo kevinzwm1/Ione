@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
 import javax.sql.DataSource;
 
 
@@ -29,4 +32,14 @@ public class IoneApplication {
 		return DataSourceBuilder.create().build();
 	}
 
+
+	@Bean
+	public WebMvcConfigurerAdapter forwardMap() {
+		return new WebMvcConfigurerAdapter() {
+			@Override
+			public void addViewControllers(ViewControllerRegistry registry) {
+				registry.addViewController("/").setViewName("forward:/app/index.html");
+			}
+		};
+	}
 }

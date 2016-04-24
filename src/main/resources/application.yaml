@@ -11,7 +11,7 @@ spring:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 
   resources:
-    static-locations: file:${HOME}/.i1/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
 
 server:
   port: 8080
@@ -33,9 +33,6 @@ spring:
     url: jdbc:oracle:thin:@//localhost:1521/i10920
     username: i1
     password: i1
-
-  resources:
-    static-locations: file:\E:\IONE\i1-server,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
 
 logging:
   file: c:\log\i1.log

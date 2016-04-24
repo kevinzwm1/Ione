@@ -26,7 +26,7 @@ public class CityController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<City> listCitys(@Valid CityQuery query) {
+    public List<City> listCities(@Valid CityQuery query) {
         return service.findAll(query);
     }
 

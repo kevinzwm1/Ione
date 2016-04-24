@@ -1,0 +1,41 @@
+spring:
+  profiles.active: kevin
+
+  jackson:
+    serialization:
+      INDENT_OUTPUT: false
+      write_null_map_values: false
+  jpa:
+    show-sql: false
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+  resources:
+    static-locations: file:${HOME}/.i1/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+server:
+  port: 8080
+
+logging:
+  file: ./log/i1.log
+  # LEVEL: TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF
+  level:
+    com.kevinzhao.weather: DEBUG
+    org.springframework.transaction: INFO
+
+--- # kevin Dev, run by IDE
+spring:
+
+  profiles: kevin
+
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@//localhost:1521/i10920
+    username: i1
+    password: i1
+
+  resources:
+    static-locations: file:\E:\IONE\i1-server,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+logging:
+  file: c:\log\i1.log

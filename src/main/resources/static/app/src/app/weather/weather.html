@@ -1,0 +1,38 @@
+<div layout-wrap layout-padding>
+        <div  layout="row" layout-md="row" layout-sm="column"  >
+            <div  >
+                <label>Please choose city:</label>
+                <md-select placeholder="" ng-model="cityId" class="select" ng-change="cityChangeHandler(cityId)">
+                    <md-option  ng-repeat="city in allCities" ng-value="city.id">{{city.name}}</md-option>
+                </md-select>
+            </div>
+            <div flex="5" >  </div>
+            <div   layout="column" >
+                <div  layout="row" class="table-item">
+                    <div flex="45"><label>City:</label> </div>
+                    <div flex="5"> </div>
+                    <div>{{selectItem.name}}</div>
+                </div>
+                <div  layout="row" class="table-item">
+                    <div flex="45" ><label>Updated time:</label> </div>
+                    <div flex="5"> </div>
+                    <div >{{selectItem.date | date:'EEEE, MMM d, y h:mm:ss a '}}</div>
+                </div>
+                <div  layout="row" class="table-item">
+                    <div flex="45"><label>Weather:</label> </div>
+                    <div flex="5"> </div>
+                    <div >{{selectItem.weather[0].description}}</div>
+                </div>
+                <div  layout="row" class="table-item">
+                    <div flex="45"><label>Temperature (Kelvin):</label> </div>
+                    <div flex="5"> </div>
+                    <div >{{selectItem.main.temp}}</div>
+                </div>
+                <div  layout="row" class="table-item">
+                    <div flex="45"><label>Wind (meter/sec):</label> </div>
+                    <div flex="5"> </div>
+                    <div >{{selectItem.wind.speed}}</div>
+                </div>
+            </div>
+        </div>
+</div>

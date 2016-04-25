@@ -2,6 +2,7 @@ package com.kevinzhao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -13,12 +14,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import javax.sql.DataSource;
 
-
-@EnableAutoConfiguration(exclude = {
+@SpringBootApplication(exclude = {
 		org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class,
-		 })
-@ComponentScan
-@EnableJpaRepositories
+})
 public class IoneApplication {
 
 	public static void main(String[] args) {

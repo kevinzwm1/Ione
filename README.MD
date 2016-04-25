@@ -1,6 +1,6 @@
-
-Make sure you have installed maven and jdk1.8,  JAVA_HOME is set correctly.
-You also need database to run this application. This appllication was tested on Oracle.
+Prerequisite
+Make sure you have installed Maven and jdk1.8,  JAVA_HOME is set correctly.
+You also need database to run this application. This application was tested on Oracle.
 Recommend IDE is IntelliJ if you want to import the project.
 
 How to run
@@ -22,7 +22,7 @@ Step 1: Prepare DB
     username: i1
     password: i1
 
-  Step 2: Compile and run
+ Step 2: Compile and run
   1 Open dos window
   2 Change to root directory and run 'mvn clean install', you will get Ione-0.0.1-SNAPSHOT.jar in Ione\target directory.
   3 Change to Ione\target directory and run 'java -jar  Ione-0.0.1-SNAPSHOT.jar'

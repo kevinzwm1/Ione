@@ -8,7 +8,8 @@ How to run
 ---------------
 Step 1: Prepare DB
 ---------------
--1 Create city table in database and insert data, take oracle as example, script as follow:
+
+- 1 Create city table in database and insert data, take oracle as example, script as follow:
 
     CREATE TABLE  "CITY"   (	"ID" NVARCHAR2(32) NOT NULL ENABLE,  	"NAME" NVARCHAR2(32) NOT NULL ENABLE  ) ;
 

@@ -36,6 +36,6 @@ Step 1: Prepare DB
 Step 2: Compile and run
 ---------------
   - 1 Open dos window
-  - 2 Change to root directory and run 'mvn clean install', you will get Ione-0.0.1-SNAPSHOT.jar in Ione\target directory.
-  - 3 Change to Ione\target directory and run 'java -jar  Ione-0.0.1-SNAPSHOT.jar'
+  - 2 Change to root directory and run 'mvn clean install', you will get Ione-0.0.1-SNAPSHOT.jar in '$ROOT_DIR\target' directory.
+  - 3 Change to '$ROOT_DIR\target' directory and run 'java -jar  Ione-0.0.1-SNAPSHOT.jar'
   - 4 Open browser and access http://localhost:8080/

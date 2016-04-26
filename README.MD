@@ -7,6 +7,7 @@ Recommend IDE is IntelliJ if you want to import the project.
 How to run
 ---------------
 Step 1: Prepare DB
+---------------
 1 Create city table in database and insert data, take oracle as example, script as follow:
    CREATE TABLE  "CITY"
    (	"ID" NVARCHAR2(32) NOT NULL ENABLE,
@@ -25,6 +26,7 @@ Step 1: Prepare DB
     password: i1
 
  Step 2: Compile and run
+ ---------------
   1 Open dos window
   2 Change to root directory and run 'mvn clean install', you will get Ione-0.0.1-SNAPSHOT.jar in Ione\target directory.
   3 Change to Ione\target directory and run 'java -jar  Ione-0.0.1-SNAPSHOT.jar'

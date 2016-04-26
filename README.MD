@@ -1,7 +1,9 @@
 Prerequisite
 ---------------
 Make sure you have installed Maven and jdk1.8,  JAVA_HOME is set correctly.
+
 You also need database to run this application. This application was tested on Oracle.
+
 Recommend IDE is IntelliJ if you want to import the project.
 
 How to run

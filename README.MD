@@ -8,7 +8,7 @@ How to run
 ---------------
 Step 1: Prepare DB
 ---------------
-1 Create city table in database and insert data, take oracle as example, script as follow:
+-1 Create city table in database and insert data, take oracle as example, script as follow:
 
     CREATE TABLE  "CITY"   (	"ID" NVARCHAR2(32) NOT NULL ENABLE,  	"NAME" NVARCHAR2(32) NOT NULL ENABLE  ) ;
 
@@ -18,8 +18,10 @@ Step 1: Prepare DB
     
     INSERT INTO  CITY(ID,NAME) VALUES('7839791','Wollongong');
 
-- 2 Change data source configuration to a working DB in src\main\resources\application.yaml .
+- 2 Change data source configuration to a working DB in src\main\resources\application.yaml
+
  datasource:
+ 
     driver-class-name: oracle.jdbc.driver.OracleDriver
 
     url: jdbc:oracle:thin:@//localhost:1521/i10920

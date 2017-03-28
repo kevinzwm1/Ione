@@ -1,4 +1,7 @@
 # End to end solution with Angular and Rest API
+Backend: Java8, Spring Boot, Spring data, SpringMVC, Torpedo 
+Frontend: Angular Material
+Please refer Weather Applivation Design document for more details
 
 Prerequisite
 ---------------
